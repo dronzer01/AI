@@ -1,0 +1,5 @@
+% Write a Prolog program to implement conc(L1, L2, 13) where 12 is the list to be appended with L1 to get the resulted list 13.
+
+conc([],L1,L1).
+conc([X|T],L2,[X|T1]):-
+    conc(T,L2,T1).

@@ -1,0 +1,18 @@
+%PERMUTATION INSERT
+
+permutation([],[]).
+permutation([X|L],P):-
+    permutation(L,L1),
+    insert(L,L1,P).
+
+
+%PERMUTATION DELETE
+
+permutation([],[]).
+permutation(P,[X|L]):-
+    del(X,P,P1],
+    permutation(P1,L).
+
+
+
+

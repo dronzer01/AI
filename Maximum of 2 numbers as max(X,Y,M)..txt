@@ -1,0 +1,11 @@
+max(X,Y,X):-
+    X>=Y.
+max(X,Y,Y):-
+    X<Y.
+max:-
+    write('Enter the first number'),nl,
+    read(X),
+    write('Enter the second number'),nl,
+    read(Y),
+   (   ( X>=Y->write(X));
+    (   write(Y))).

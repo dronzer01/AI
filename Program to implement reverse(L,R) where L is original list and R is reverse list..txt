@@ -1,0 +1,6 @@
+%  Write a Prolog program to implement reverse (L,R) where List L is original and List &R is reversed list.
+
+reverse([],[]).
+reverse(L,L).
+reverse([H|T],R):-
+    reverse(T,R1).append(R1,[H],R).

@@ -1,0 +1,5 @@
+%Write a prolog program to calculate the sum of two numbers 
+
+add(X, Y):-
+Z is X+Y, 
+write(Z).
